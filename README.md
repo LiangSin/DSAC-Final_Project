@@ -27,7 +27,8 @@ Production using [Max 8](https://cycling74.com/downloads) is divided into two pa
 	
 	The second method involves examining the Fourier transform of instruments, analyzing waveform composition, and simulating it by overlaying multiple sine waves. This approach was used for the violin and flute because these timbres are challenging to simulate with simpleFM, and there is abundant Fourier transform data available online.
 	There's an example for synthesizing flute timbre, where the topmost input is the frequency and the bottom output is waveform:
-	![](synthesize_example.png)
+	
+	<img src="synthesize_example.png" width="300">
 
 By combining the intensity signals and waveforms, and then using the [dac](https://docs.cycling74.com/max8/refpages/dac~) object, sound can be output based on the MIDI file. 
 
@@ -35,7 +36,8 @@ By combining the intensity signals and waveforms, and then using the [dac](https
 There's a [link](https://youtu.be/ZYCsnA9kni4) to demo video.
 
 I created a main program to control all tracks at once, achieving the goal of playing the entire composition. After cloning this repository, open `main.maxpat` with MAX 8. You will see the following interface. Press "read," then "start," and adjust the volume of each track to listen to the music.
-![](main.png)
+
+<img src="main.png" width="500">
 
 ## Visual Element
 
@@ -44,6 +46,7 @@ We used p5.js to implement the random walker and created a web page for it. In c
 By employing the Canny Algorithm, we performed edge detection on the teacher's photo, using it as the basis for the random walker's movement. As the random walker "walks," we guide it towards the nearest edges. This process transforms what initially appears to be a random image into a final visual representation. This approach also conveys the meaning that art is carefully designed. 
 
 There's the result:
-![Demo](visual_demo.png)
+
+<img src="visual_demo.png" width="300">
 
 This part is done by [another teammate](https://github.com/syun413/p5js-randomwalker-sketch-face).
